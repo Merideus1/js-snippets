@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Learning Javascript</title>
+</head>
+
+<body>
+
+    <button id="stylesChanger">Change the text!</button>
+
+    <button id="stylesChangerTwo">Change some more text!</button>
+
+    <div id="firstDiv">This is some text</div>
+    
+    <br/>
+
+    <div id="secondDiv">This is some text</div>
+
+
+
+    <script type="text/javascript">
+
+        var myArray = new Array();
+
+        myArray[0] = "Onions and Tomatoes Pizza";
+        myArray[1] = "Kit-Kat Bars";
+        myArray[2] = "Bacon and Eggs";
+
+        console.log(myArray);
+
+        document.getElementById("stylesChanger").onclick=function() {
+        
+            document.getElementById("firstDiv").innerHTML=myArray[0];
+           
+        
+        
+        }
+
+        var myNewArray = new Array();
+
+        myNewArray = ["Ice Skating", "Working Hard", "Spending time with Family"];
+
+        myNewArray.push("Cello");
+
+        myNewArray.splice(1, 0, "Summer");
+
+        console.log(myNewArray.length);
+
+        document.getElementById("stylesChangerTwo").onclick = function () {
+
+            document.getElementById("secondDiv").innerHTML = myNewArray[3];
+
+        }
+
+    </script>
+</body>
+</html>
