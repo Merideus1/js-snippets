@@ -27,10 +27,8 @@
 
                 if (document.getElementById("myNumber").value == x) {
                     gotit = true;
-                    //alert("I got it! It was a " + x);
                 } else {
                     guesses++;
-                    //alert("I didn't get it!");
                 }
             }
 
